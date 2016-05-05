@@ -22,7 +22,8 @@
         <url>https://github.com/homelessboy/afsd-cloud-parent</url>
         <connection>scm:git:git@github.com:homelessboy/afsd-cloud-parent.git</connection>
         <developerConnection>scm:git:git@github.com:homelessboy/afsd-cloud-parent.git</developerConnection>
-    </scm>
+      <tag>0.0.2</tag>
+  </scm>
 
     <build>
         <plugins>
