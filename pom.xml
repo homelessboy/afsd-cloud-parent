@@ -18,6 +18,7 @@
         <module>person</module>
         <module>some</module>
         <module>discovery</module>
+        <module>config</module>
     </modules>
 
     <scm>
