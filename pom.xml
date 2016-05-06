@@ -6,7 +6,7 @@
 
     <artifactId>cloud-parent</artifactId>
     <packaging>pom</packaging>
-    <version>0.0.3-SNAPSHOT</version>
+    <version>0.0.5-SNAPSHOT</version>
 
     <parent>
         <groupId>org.springframework.boot</groupId>
@@ -23,7 +23,7 @@
         <url>https://github.com/homelessboy/afsd-cloud-parent</url>
         <connection>scm:git:git@github.com:homelessboy/afsd-cloud-parent.git</connection>
         <developerConnection>scm:git:git@github.com:homelessboy/afsd-cloud-parent.git</developerConnection>
-      <tag>0.0.4</tag>
+      <tag>0.0.2</tag>
   </scm>
 
     <build>
