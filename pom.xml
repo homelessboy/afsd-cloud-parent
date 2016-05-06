@@ -14,11 +14,16 @@
         <version>1.3.3.RELEASE</version>
     </parent>
 
+    <properties>
+        <JDK>1.8</JDK>
+    </properties>
+
     <modules>
         <module>person</module>
         <module>some</module>
         <module>discovery</module>
         <module>config</module>
+        <module>ui</module>
     </modules>
 
     <scm>

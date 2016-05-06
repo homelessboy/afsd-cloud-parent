@@ -3,10 +3,7 @@ package me.afsd.cloud.person.controller;
 import me.afsd.cloud.person.dao.PersonDao;
 import me.afsd.cloud.person.domain.Person;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -29,6 +26,13 @@ public class PersonController {
     @RequestMapping(value = "{id}",method = RequestMethod.GET)
     public Person get(@PathVariable Long id){
         return personDao.findOne(id);
+    }
+
+    @RequestMapping(value = "save",method = RequestMethod.POST)
+    public List<Person> savePerson(@RequestBody String personName){
+        Person person = new Person(personName);
+        personDao.save(person);
+        return personDao.findAll();
     }
 
 }
